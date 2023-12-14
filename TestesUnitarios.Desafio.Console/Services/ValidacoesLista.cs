@@ -1,8 +1,11 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace TestesUnitarios.Desafio.Console.Services
 {
     public class ValidacoesLista
     {
-        public List<int> RemoverNumerosNegativos(List<int> lista)
+        public System.Collections.Generic.List<int> RemoverNumerosNegativos(List<int> lista)
         {
             var listaSemNegativos = lista.Where(x => x > 0);
             return listaSemNegativos.ToList();
